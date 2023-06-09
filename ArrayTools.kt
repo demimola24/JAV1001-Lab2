@@ -11,7 +11,6 @@ fun casearCipher(value: String, shiftValue: Int): String{
     return encryptedValue
 }
 
-
 fun casearCipherTesting(){
     // Getting input from the user
     val input = Scanner(System.`in`)
@@ -23,4 +22,21 @@ fun casearCipherTesting(){
     val shiftInput = input.nextInt()
 
     println("Encrypted value is : ${casearCipher(numberInput,shiftInput)}")
+}
+
+fun arrayAveraging(input: Array<Int>): Double{
+    return if (input.isNullOrEmpty()) 0.0
+    else {
+        var sum = 0.0
+        for (i in input) {
+            sum += i
+        }
+        sum / input.size
+    }
+}
+fun arrayAvgTestCases(){
+    println("Average is ${arrayAveraging(arrayOf(3,2,4))}")
+    println("Average is ${arrayAveraging(arrayOf(-2,2,-4))}")
+    println("Average is ${arrayAveraging(arrayOf(0,0,0))}")
+
 }
