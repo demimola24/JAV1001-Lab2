@@ -3,7 +3,9 @@ import java.util.*
 
 /*
    Name: Ademola Tikare
-   Student Number: A00276024   
+   Student Number: A00276024
+   Description: This is a program that encrypts, finds averages, reverses arrays, has a contain function and a custom print function.
+
  */
 
 
