@@ -1,6 +1,11 @@
 import java.util.Scanner
 import java.util.*
 
+/*
+   Name: Ademola Tikare
+   Student Number: A00276024   
+ */
+
 
 fun main() {
     arrayReverseTestCases()
