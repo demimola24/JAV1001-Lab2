@@ -25,13 +25,13 @@ fun casearCipherTesting() {
     // Getting input from the user
     val input = Scanner(System.`in`)
 
-    println("Enter a string to encrypt: ")
+    printlnAction("Enter a string to encrypt: ")
     val numberInput = input.nextLine()
 
-    println("Enter a shift value (Int): ")
+    printlnAction("Enter a shift value (Int): ")
     val shiftInput = input.nextInt()
 
-    println("Encrypted value is : ${casearCipher(numberInput, shiftInput)}")
+    printlnAction("Encrypted value is : ${casearCipher(numberInput, shiftInput)}")
 }
 
 fun arrayAveraging(input: Array<Int>): Double {
@@ -46,9 +46,9 @@ fun arrayAveraging(input: Array<Int>): Double {
 }
 
 fun arrayAvgTestCases() {
-    println("Average is ${arrayAveraging(arrayOf(3, 2, 4))}")
-    println("Average is ${arrayAveraging(arrayOf(-2, 2, -4))}")
-    println("Average is ${arrayAveraging(arrayOf(0, 0, 0))}")
+    printlnAction("Average is ${arrayAveraging(arrayOf(3, 2, 4))}")
+    printlnAction("Average is ${arrayAveraging(arrayOf(-2, 2, -4))}")
+    printlnAction("Average is ${arrayAveraging(arrayOf(0, 0, 0))}")
 
 }
 
@@ -62,9 +62,9 @@ fun arrayContains(values: Array<Int>, query: Int): Boolean {
 }
 
 fun arrayContainsTestCases() {
-    println(arrayContains(arrayOf(3, 2, 4), 2))
-    println(arrayContains(arrayOf(-3, -2, -4), 2))
-    println(arrayContains(arrayOf(0, 0, 0), 2))
+    printlnAction(arrayContains(arrayOf(3, 2, 4), 2).toString())
+    printlnAction(arrayContains(arrayOf(-3, -2, -4), 2).toString())
+    printlnAction(arrayContains(arrayOf(0, 0, 0), 2).toString())
 
 }
 
@@ -78,8 +78,11 @@ fun arrayReverse(values: Array<Int>): Array<Int> {
 }
 
 fun arrayReverseTestCases() {
-    println(Arrays.toString(arrayReverse(arrayOf(-3, -2, -4))))
-    println(Arrays.toString(arrayReverse(arrayOf(1, 1, 3))))
-    println(Arrays.toString(arrayReverse(arrayOf(-3, -0, 100))))
+    printlnAction(Arrays.toString(arrayReverse(arrayOf(-3, -2, -4))))
+    printlnAction(Arrays.toString(arrayReverse(arrayOf(1, 1, 3))))
+    printlnAction(Arrays.toString(arrayReverse(arrayOf(-3, -0, 100))))
 }
 
+fun printlnAction(values: String) {
+    println("Console => $values")
+}
