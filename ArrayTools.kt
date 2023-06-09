@@ -40,3 +40,19 @@ fun arrayAvgTestCases(){
     println("Average is ${arrayAveraging(arrayOf(0,0,0))}")
 
 }
+
+fun arrayContains(values: Array<Int>, query: Int): Boolean{
+    for(number in values){
+        if(number==query){
+            return true
+        }
+    }
+    return false
+}
+fun arrayContainsTestCases(){
+    println(arrayContains(arrayOf(3,2,4),2))
+    println(arrayContains(arrayOf(-3,-2,-4),2))
+    println(arrayContains(arrayOf(0,0,0),2))
+
+}
+
