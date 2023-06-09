@@ -56,3 +56,18 @@ fun arrayContainsTestCases(){
 
 }
 
+
+fun arrayReverse(values: Array<Int>): Array<Int>{
+    val mutableList = mutableListOf<Int>()
+    for (i in values.lastIndex downTo 0) {
+        mutableList.add(values[i])
+    }
+    return mutableList.toTypedArray()
+}
+
+fun arrayReverseTestCases(){
+    println(Arrays.toString(arrayReverse(arrayOf(-3,-2,-4))))
+    println(Arrays.toString(arrayReverse(arrayOf(1,1,3))))
+    println(Arrays.toString(arrayReverse(arrayOf(-3,-0,100))))
+}
+
