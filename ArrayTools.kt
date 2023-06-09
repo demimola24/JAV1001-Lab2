@@ -10,3 +10,17 @@ fun casearCipher(value: String, shiftValue: Int): String{
     }
     return encryptedValue
 }
+
+
+fun casearCipherTesting(){
+    // Getting input from the user
+    val input = Scanner(System.`in`)
+
+    println("Enter a string to encrypt: ")
+    val numberInput = input.nextLine()
+
+    println("Enter a shift value (Int): ")
+    val shiftInput = input.nextInt()
+
+    println("Encrypted value is : ${casearCipher(numberInput,shiftInput)}")
+}
